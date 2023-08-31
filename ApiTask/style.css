@@ -1,0 +1,125 @@
+body {
+  background:  rgba(183, 133, 223, 1);
+
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  background: rgb(201, 74, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 74, 229, 1) 7%,
+    rgba(63, 94, 251, 1) 63%,
+    rgba(63, 94, 251, 1) 63%,
+    rgba(201, 74, 229, 1) 86%
+  );
+  text-align: center;
+
+  color: white; /* Set text color for visibility */
+  font-size: 56px;
+
+  margin: 0; /* Remove any default margin */
+  padding: 20 0;
+}
+
+
+
+.grid-container {
+  padding-top: 10px;
+  border: 4px solid white; /* Add a white border */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.photo-item {
+  border: 4px solid white; /* Add a white border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust the width to occupy the entire available column */
+  padding: 10px; /* Add padding around the image for spacing */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+.p {
+  text-align: center;
+  color: white;
+  font-size: 56px;
+  font-family: Inter;
+  justify-content: center;
+}
+.photo-item img {
+  max-width: 100%; /* Make the image responsive within its container */
+  height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  border: 4px solid white;
+  background: rgb(201, 74, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 74, 229, 1) 7%,
+    rgba(63, 94, 251, 1) 63%,
+    rgba(63, 94, 251, 1) 63%,
+    rgba(201, 74, 229, 1) 86%
+  );
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 45%;
+  max-height: 90%;
+}
+
+.close-button {
+  color: white;
+  position: absolute;
+  top: -1px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close-button:hover {
+  color: rgba(63, 94, 251, 1);
+  background-color: white;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80%;
+  margin-bottom: 10px;
+  border: 4px solid white;
+}
+
+.modal-title {
+  color: azure;
+}
+
+.download-button {
+  margin-top: 10px;
+  padding: 15px 34px;
+  border-radius: 50%;
+  background-color: #c94ae5;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.download-button:hover {
+  background-color: #3f5efb;
+  color: white;
+}
